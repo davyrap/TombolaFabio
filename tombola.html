@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="tombolaJS.js"></script>
+    <script src="unione.js"></script>
+    <link rel="stylesheet" href="tombolaCSS.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombolissima</title>
+</head>
+
+
+<body style="text-align: center;">
+
+    <section class="about" id="about">
+        <div class="sx">
+            <table id= "scrivi" class="tabellone">
+                <script type="text/javascript">tombola_writeln();</script>
+            </table>
+        </div>
+        
+        <div class="dx">
+            <section class="vertical" id="vertical">
+                <div>
+                    <table id="ricerca" style="width: 400px";>
+                        <th style="width: 50%">
+                            <input type="number" id="numero"> /60
+                        </th>
+                        <th style="width: 50%">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/search--v2.png" id="search" placeholder="search" onclick="cerca()">
+                        </th>
+                    </table>
+                </div>
+                <div>
+                    <table id="cartella">
+                        <script type="text/javascript">cartella(1);</script>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <br> 
+
+    <div>
+        <table class="smorfia" style="width: 1000px;">
+            <td rowspan="2"><img src="https://img.icons8.com/doodle/96/fa314a/circled-right-2.png" onclick="estrai();"></td>
+            <td style="width: 500px;"><h1 id="estrazione1" style="margin: 1px;"></h1> </td>
+            <td style="width: 250px;"><h2 id="estrazione2" ></h2> </td>
+            <td style="width: 150px;"><h3 id="estrazione3" ></h3> </td>
+        <tr>
+            <td colspan="3" style="width: 900px;"> <p id="LBLsmorfia" class= "testo" style="margin: 1px;"> Smorfia Napoletana </p> </td>
+        </table>
+    </div>
+
+</body>
+</html>

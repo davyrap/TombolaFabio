@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombola</title>
+    <script src="indexJS.js"></script>
+    <script src="unione.js"></script>
+    <link rel="stylesheet" href="indexCSS.css">
+</head>
+
+<body>
+    <div id="logo"> <img src="logo.gif" id="immagine" width="30%"> </div>
+    <div>
+        <table>
+            <td colspan="2"> Cartella: <input type="number" id="cartella"> di 60.</th>
+            <tr>
+            <th>
+                <img src="https://img.icons8.com/external-bearicons-glyph-bearicons/64/000000/external-buy-call-to-action-bearicons-glyph-bearicons-1.png" id="buy" placeholder="buy" onclick="compra()" onclick="setpuntate()">
+            </th>
+            <th colspan="1">
+                € <input type="number" id="soldi">
+            </th>
+            <tr></tr>
+        </table>   
+        &nbsp &nbsp &nbsp
+        <table id="puntata"> 
+            <td id="LBLpuntata_1"> Ambo </td>
+            <td> <input type="text" id="INpuntata_1" placeholder="€ 0.00"> </td>
+            <tr>
+            <td id="LBLpuntata_2"> Terno </td>
+            <td> <input type="text" id="INpuntata_2" placeholder="€ 0.00"> </td>
+            <tr>
+            <td id="LBLpuntata_3"> Quaterna </td>
+            <td> <input type="text" id="INpuntata_3" placeholder="€ 0.00"> </td>
+            <tr>
+            <td id="LBLpuntata_4"> Cinquina </td>
+            <td> <input type="text" id="INpuntata_4" placeholder="€ 0.00"> </td>
+            <tr>
+            <td id="LBLpuntata_5"> Tombola </td>
+            <td> <input type="text" id="INpuntata_5" placeholder="€ 0.00"> </td>
+            <tr>
+        </table>
+    </div>
+    <div>
+        <a href="./tombola.html"> <button class="button button2" id="play" onclick="setpuntate();"> Play </button></a>
+    </div>
+</body>
+</html>
